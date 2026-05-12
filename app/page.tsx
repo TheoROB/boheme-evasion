@@ -293,7 +293,7 @@ export default function Home() {
             Offrez l'évasion à vos proches
           </h2>
           <p className="text-white/80 mb-8 max-w-xl mx-auto">
-            Un bon cadeau Bohème Évasion, c'est le cadeau parfait pour un anniversaire, une anniversary ou simplement pour faire plaisir.
+            Un bon cadeau Boheme Evasion, c'est le cadeau parfait pour un anniversaire ou simplement pour faire plaisir.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/bons-cadeaux" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-full hover:bg-white/90 transition-all">
