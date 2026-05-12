@@ -104,26 +104,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-background">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Pourquoi nous choisir</span>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text mt-3 mb-4">
-              L'évasion parfaite à deux
-            </h2>
-            <div className="w-16 h-px bg-primary/40 mx-auto" />
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((item, index) => (
-              <div key={index} className="card text-center group hover:-translate-y-1 transition-all duration-300">
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="font-serif text-xl font-semibold text-text mb-2">{item.title}</h3>
-                <p className="text-muted text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Features />
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
