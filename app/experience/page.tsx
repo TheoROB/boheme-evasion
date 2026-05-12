@@ -16,16 +16,16 @@ const inclusions = [
 ];
 
 const attentions = [
-  'Draps et linges de bain fournis',
-  'Produits d\'hygiène corporelle',
-  'Thé et café à volonté',
-  'Accès autonome 24h/24',
-  'Stationnement gratuit',
+  "Draps et linges de bain fournis",
+  "Produits d'hygiène corporelle",
+  "Thé et café à volonté",
+  "Accès autonome 24h/24",
+  "Stationnement gratuit",
 ];
 
 export default function Experience() {
   return (
-    <main className="pt-20">
+    <div className="min-h-screen bg-background pt-20">
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <Image src={heroImage} alt="Bohème Évasion" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-text/70 via-text/30 to-transparent" />
@@ -41,7 +41,7 @@ export default function Experience() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-background">
+      <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Prestations incluses</span>
@@ -77,7 +77,7 @@ export default function Experience() {
                   Chaque élément de décoration a été choisi avec soin pour évoquer la douceur de vivre et le calme absolu.
                 </p>
                 <p>
-                  Éclairage d'ambiance tamisé,tons chauds et naturels, matériaux nobles... 
+                  Éclairage d'ambiance tamisé, tons chauds et naturels, matériaux nobles... 
                   Un écrin de sérénité où le temps s'arrête.
                 </p>
                 <p>
@@ -125,7 +125,7 @@ export default function Experience() {
           </Link>
         </div>
       </section>
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }

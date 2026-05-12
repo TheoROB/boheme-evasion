@@ -1,15 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import About from '@/components/About';
 import Features from '@/components/Features';
-import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
 
 const heroImage = '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (5).jpeg';
 
 const benefits = [
-  { icon: '💑', title: 'Romantique', desc: 'Un écrin d'amour et de sérénité pour deux' },
+  { icon: '💑', title: 'Romantique', desc: "Un écrin d'amour et de sérénité pour deux" },
   { icon: '🧖', title: 'Privatif', desc: '100% de votre espace, sans contact avec d\'autres voyageurs' },
   { icon: '✨', title: 'Tout compris', desc: 'Sauna, balnéo, cuisine, terrasse... Tout est prévu' },
   { icon: '📍', title: 'Proche Lille', desc: 'À seulement 20 minutes de Lille, facile d\'accès' },
@@ -34,7 +32,7 @@ const testimonials = [
     date: "Janvier 2026"
   },
   {
-    quote: "Le cadeau parfait pour notre anniversaire de mariage.部署 détail a été pensé avec amour.",
+    quote: "Le cadeau parfait pour notre anniversaire de mariage. Chaque détail a été pensé avec amour.",
     name: "Marie & Pierre",
     date: "Décembre 2025"
   },

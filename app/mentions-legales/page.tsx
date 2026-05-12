@@ -3,8 +3,8 @@ import Footer from '@/components/Footer';
 
 export default function MentionsLegales() {
   return (
-    <main className="pt-20">
-      <section className="py-16 px-6 bg-background">
+    <div className="min-h-screen bg-background pt-20">
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Légal</span>
           <h1 className="font-serif text-5xl md:text-6xl font-semibold text-text mt-3 mb-4">
@@ -93,12 +93,12 @@ export default function MentionsLegales() {
 
           <div className="border-t border-primary/10 pt-8">
             <Link href="/contact" className="text-primary hover:underline">
-              Une question ? Contactez-nous →
+              Une question ? Contactez-nous
             </Link>
           </div>
         </div>
       </section>
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }

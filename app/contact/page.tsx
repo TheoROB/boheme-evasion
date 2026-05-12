@@ -40,8 +40,8 @@ export default function Contact() {
   }
 
   return (
-    <main className="pt-20">
-      <section className="py-16 px-6 bg-background">
+    <div className="min-h-screen bg-background pt-20">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Contact</span>
           <h1 className="font-serif text-5xl md:text-6xl font-semibold text-text mt-3 mb-4">
@@ -54,7 +54,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-background">
+      <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
@@ -148,7 +148,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }

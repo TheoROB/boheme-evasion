@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 const tarifs = [
   {
-    title: 'Week-end романтиque',
+    title: 'Week-end romantique',
     duration: '2 nuits',
     price: '350',
     features: [
@@ -55,8 +55,8 @@ const supplements = [
 
 export default function Tarifs() {
   return (
-    <main className="pt-20">
-      <section className="py-16 px-6 bg-background">
+    <div className="min-h-screen bg-background pt-20">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Tarifs</span>
           <h1 className="font-serif text-5xl md:text-6xl font-semibold text-text mt-3 mb-4">
@@ -69,7 +69,7 @@ export default function Tarifs() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-background">
+      <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-24">
             {tarifs.map((tarif, index) => (
@@ -138,7 +138,7 @@ export default function Tarifs() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-primary/5">
+      <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-card">
             <h2 className="font-serif text-3xl font-semibold text-text text-center mb-6">
@@ -173,7 +173,7 @@ export default function Tarifs() {
           </Link>
         </div>
       </section>
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }

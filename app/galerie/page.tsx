@@ -5,34 +5,34 @@ import { useState } from 'react';
 import Footer from '@/components/Footer';
 
 const photos = [
-  { src: '/photos/WhatsApp Image 2026-04-30 at 15.59.42.jpeg', alt: 'Vue d\'ensemble', category: 'espace' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 15.59.42.jpeg', alt: 'Vue ensemble', category: 'espace' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.05.jpeg', alt: 'Coin salon', category: 'espace' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56.jpeg', alt: 'Vue intérieure', category: 'espace' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56.jpeg', alt: 'Vue interieure', category: 'espace' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (1).jpeg', alt: 'Coin nuit', category: 'chambre' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (2).jpeg', alt: 'Détente', category: 'chambre' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (2).jpeg', alt: 'Detente', category: 'chambre' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47.jpeg', alt: 'Ambiance cosy', category: 'chambre' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (1).jpeg', alt: 'Moment détente', category: 'spa' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (2).jpeg', alt: 'Espace bien-être', category: 'spa' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (3).jpeg', alt: 'Lumière tamisée', category: 'spa' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (1).jpeg', alt: 'Moment detente', category: 'spa' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (2).jpeg', alt: 'Espace bien-etre', category: 'spa' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (3).jpeg', alt: 'Lumiere tamisee', category: 'spa' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.47 (4).jpeg', alt: 'Ambiance spa', category: 'spa' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.41.jpeg', alt: 'Espace bien-être', category: 'spa' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.41.jpeg', alt: 'Espace spa', category: 'spa' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.45.jpeg', alt: 'Terrasse', category: 'exterieur' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.46.jpeg', alt: 'Cuisine', category: 'exterieur' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.46 (1).jpeg', alt: 'Salle de bain', category: 'exterieur' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.51.jpeg', alt: 'Décoration', category: 'details' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.53.jpeg', alt: 'Ambiance bohème', category: 'details' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.51.jpeg', alt: 'Decoration', category: 'details' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.53.jpeg', alt: 'Ambiance bohemienne', category: 'details' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (3).jpeg', alt: 'Salle de bain luxe', category: 'details' },
-  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (4).jpeg', alt: 'Équipements spa', category: 'details' },
+  { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (4).jpeg', alt: 'Equipements spa', category: 'details' },
   { src: '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (5).jpeg', alt: 'Vue principale', category: 'details' },
 ];
 
 const categories = [
   { id: 'all', label: 'Tout' },
-  { id: 'espace', label: 'L\'espace' },
+  { id: 'espace', label: 'Espace' },
   { id: 'chambre', label: 'Chambre' },
   { id: 'spa', label: 'Espace Spa' },
-  { id: 'exterieur', label: 'Extérieur' },
-  { id: 'details', label: 'Détails' },
+  { id: 'exterieur', label: 'Exterieur' },
+  { id: 'details', label: 'Details' },
 ];
 
 export default function Galerie() {
@@ -44,8 +44,8 @@ export default function Galerie() {
     : photos.filter(p => p.category === selectedCategory);
 
   return (
-    <main className="pt-20">
-      <section className="py-16 px-6 bg-background">
+    <div className="min-h-screen bg-background pt-20">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Galerie</span>
           <h1 className="font-serif text-5xl md:text-6xl font-semibold text-text mt-3 mb-4">
@@ -53,12 +53,12 @@ export default function Galerie() {
           </h1>
           <div className="w-16 h-px bg-primary/40 mx-auto mb-6" />
           <p className="text-muted max-w-xl mx-auto">
-            Découvrez chaque recoin de votre futur cocon romantique
+            Decouvrez chaque recoin de votre futur cocon romantique
           </p>
         </div>
       </section>
 
-      <section className="px-6 pb-24 bg-background">
+      <section className="px-6 pb-24">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map(cat => (
@@ -147,7 +147,7 @@ export default function Galerie() {
           </p>
         </div>
       )}
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }

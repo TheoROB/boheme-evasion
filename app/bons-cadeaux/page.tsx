@@ -63,8 +63,8 @@ export default function BonsCadeaux() {
   }
 
   return (
-    <main className="pt-20">
-      <section className="py-16 px-6 bg-background">
+    <div className="min-h-screen bg-background pt-20">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-primary/70 font-medium">Bons cadeaux</span>
           <h1 className="font-serif text-5xl md:text-6xl font-semibold text-text mt-3 mb-4">
@@ -77,7 +77,7 @@ export default function BonsCadeaux() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-background">
+      <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <form onSubmit={handleSubmit} className="bg-white rounded-3xl shadow-card p-8 md:p-12">
             <div className="mb-12">
@@ -168,7 +168,7 @@ export default function BonsCadeaux() {
           </form>
         </div>
       </section>
-    </main>
-    <Footer />
+      <Footer />
+    </div>
   );
 }
