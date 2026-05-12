@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Footer from '@/components/Footer';
 
 const services = [
   { id: 'sauna', label: 'Sauna privatif', price: 0, included: true },
@@ -172,5 +173,6 @@ export default function Reservation() {
         </form>
       </div>
     </div>
+    <Footer />
   );
 }

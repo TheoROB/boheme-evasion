@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const montants = [50, 100, 150, 200, 250, 300];
 
@@ -168,5 +169,6 @@ export default function BonsCadeaux() {
         </div>
       </section>
     </main>
+    <Footer />
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const tarifs = [
   {
@@ -173,5 +174,6 @@ export default function Tarifs() {
         </div>
       </section>
     </main>
+    <Footer />
   );
 }

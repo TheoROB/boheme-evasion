@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 export default function MentionsLegales() {
   return (
@@ -98,5 +99,6 @@ export default function MentionsLegales() {
         </div>
       </section>
     </main>
+    <Footer />
   );
 }

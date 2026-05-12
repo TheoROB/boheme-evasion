@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const heroImage = '/photos/WhatsApp Image 2026-04-30 at 16.23.56 (5).jpeg';
 
@@ -125,5 +126,6 @@ export default function Experience() {
         </div>
       </section>
     </main>
+    <Footer />
   );
 }

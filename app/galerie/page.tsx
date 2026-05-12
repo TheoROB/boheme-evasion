@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import Footer from '@/components/Footer';
 
 const photos = [
   { src: '/photos/WhatsApp Image 2026-04-30 at 15.59.42.jpeg', alt: 'Vue d\'ensemble', category: 'espace' },
@@ -147,5 +148,6 @@ export default function Galerie() {
         </div>
       )}
     </main>
+    <Footer />
   );
 }
