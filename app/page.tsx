@@ -57,50 +57,44 @@ export default function Home() {
             </div>
           </div>
           
-          <h1 className="font-serif text-8xl md:text-9xl font-bold mb-2 leading-none tracking-tight">
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-2 leading-none tracking-tight">
             Bohème
           </h1>
-          <h1 className="font-serif text-5xl md:text-6xl font-light italic mb-8 tracking-wide">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light italic mb-6 sm:mb-8 tracking-wide">
             Évasion
           </h1>
           
-          <div className="w-32 h-px bg-secondary/60 mx-auto mb-8" />
+          <div className="w-20 sm:w-24 md:w-32 h-px bg-secondary/60 mx-auto mb-6 sm:mb-8" />
           
-          <p className="text-2xl md:text-3xl font-light mb-4 text-white/90 font-serif italic">
+          <p className="text-lg sm:text-xl md:text-2xl font-light mb-3 sm:mb-4 text-white/90 font-serif italic">
             L'escapade romantique parfaite
           </p>
-          <p className="text-base md:text-lg text-white/80 mb-12 max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-white/80 mb-8 sm:mb-10 md:mb-12 max-w-xl mx-auto leading-relaxed px-4 sm:px-0">
             Sauna privatif · Baignoire balnéo · Lit king size · Terrasse
             <br />
             <span className="text-secondary font-medium">Armentières, à 20 min de Lille</span>
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Link href="/reservation" className="btn-primary text-lg px-12 py-5">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
+            <Link href="/reservation" className="btn-primary text-base sm:text-lg px-8 sm:px-10 md:px-12 py-4 sm:py-5">
               Réserver maintenant
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-            <Link href="/experience" className="btn-secondary border-white/50 text-black hover:bg-white hover:text-text backdrop-blur-sm">
-              Découvrir l'expérience
+            <Link href="/experience" className="btn-secondary border-white/50 text-black hover:bg-white hover:text-text backdrop-blur-sm text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
+              Découvrir
             </Link>
           </div>
           
-          <div className="grid grid-cols-4 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 max-w-xs sm:max-w-sm md:max-w-2xl mx-auto px-4 sm:px-0">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="font-serif text-2xl md:text-3xl font-bold text-white">{stat.value}</p>
+                <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">{stat.value}</p>
                 <p className="text-xs text-white/60 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </section>
 
