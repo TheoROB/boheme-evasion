@@ -25,7 +25,7 @@ const features = [
       </svg>
     ),
     title: 'Lit King Size',
-    description: "Un confort optimal pour des nuits paisibles et浪漫iques",
+    description: "Un confort optimal pour des nuits paisibles et romantiques",
   },
   {
     icon: (
